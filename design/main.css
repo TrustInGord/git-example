@@ -1,0 +1,26 @@
+
+
+
+body {
+    justify-content: center;
+    }
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    background-color: hsl(209, 95%, 55%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: hand;
+    text-align: center;
+}
+
