@@ -1,0 +1,73 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: system-ui;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+  height: 100%;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.jokes-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jokes {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.8rem;
+  background: beige;
+  padding: 2rem;
+  border-radius: 10px;
+  max-inline-size: 75rem;
+
+  > * {
+    flex: 1 1 18.1875rem;
+  }
+}
+
+.btn {
+  padding-inline: 1.6rem;
+  padding-block: 0.8rem;
+  border: none;
+  background: white;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 2px 4px 0 0 black;
+  transition:
+    box-shadow 0.2s ease-in,
+    transform 0.1s ease-in;
+
+  &:hover {
+    box-shadow: 4px 8px 0 0 black;
+  }
+
+  &:active {
+    box-shadow: 4px 4px 0 0 black;
+    transform: scale(0.9);
+  }
+}

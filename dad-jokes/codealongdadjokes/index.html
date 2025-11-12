@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/index.css" />
+    <script type="module" src="src/index.js"></script>
+    <title>Dad's Joke Generator</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="jokes-container">
+        <div class="jokes">
+          <h1 class="visually-hidden">Jokes Generator</h1>
+          <article>
+            <header><h2>Get Dad's Jokes as both text and image!</h2></header>
+            <div data-js="joke-ui"></div>
+            <button class="btn" data-js="joke-btn">
+              Generate a random joke
+            </button>
+          </article>
+          <div>
+            <form data-js="search-form" role="search">
+              <div role="search">
+                <span class="visually-hidden" id="search-description"
+                  >search for dad's joke with a limit of 4 per search</span
+                >
+                <label for="search-input" aria-describedby="search-description"
+                  >Search query <span aria-hidden="true">:</span></label
+                >
+
+                <input
+                  type="search"
+                  role="combobox"
+                  id="search-input"
+                  name="query"
+                  placeholder="Enter search term..."
+                  required
+                  value=""
+                  aria-controls="results"
+                  aria-autocomplete="list"
+                  data-js="search-box"
+                />
+
+                <button class="btn" data-js="search-submit" type="submit">
+                  Search
+                </button>
+              </div>
+            </form>
+            <div data-js="search-feedback" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="index.js"></script>
+    <title>Fetch-A-Joke</title>
+</head>
+<body>
+    <section>
+        <article>
+            <P>Search query:
+            <input id="search" type="text" placeholder="Search" name="user-search">
+            <button id="searchbutton" class="button">Search</button></P>
+            <h2 id="searchingFor"></h2>
+        </article>
+
+        <article>
+            <h1>Get Dad Jokes<br>(Text and Image)!</h1>
+            <div id="jokeHolder"></div>
+            <button id="Generate" class="button">Generate a random joke</button>
+        </article>
+    </section>
+</body>
+</html>
+
+<!--
+/Left Side
+
+//Text "Search Query"
+    //URL = "https://icanhazdadjoke.com/search?term=SearchTerm&limit=5"
+    //Up to 5 jokes
+    //Failure Term <term> does not yield any results
+//Input prompt default text "Enter search term..."
+//Search button
+//Searching for ${SearchTerm}
+//Flex
+
+
+//Right side
+
+//<h1>Get Dad's Jokes as both Text and Image</h1>
+
+//Dad Jokes api text response
+    //Include api text id
+//Dad Jokes api image response
+        Fetch a dad joke as an image
+
+GET https://icanhazdadjoke.com/j/<joke_id>.png fetch a dad joke as an image.
+
+<img src="https://icanhazdadjoke.com/j/R7UfaahVfFd.png" />
+
+//Button that says "Generate a random joke"
+-->
