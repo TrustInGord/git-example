@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--border-color);
+    padding: 0 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: rgb(220, 98, 31);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header-nav a:hover {
+    color: rgb(255, 120, 50);
+}
+
+.header-nav a.active {
+    font-weight: bolder;
+}
+
+.dark .header-nav a.active {
+    color: white;
+}
+
+.light .header-nav a.active {
+    color: black;
+}
+
+.header-title {
+    margin: 0;
+    color: inherit;
+}

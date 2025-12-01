@@ -1,0 +1,262 @@
+:root {
+  --border-color: rgb(220, 98, 31);
+}
+
+.light {
+  background-color: rgb(254, 254, 254);
+  color: #213547;
+  min-height: 100vh;
+}
+
+.dark {
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.87);
+  min-height: 100vh;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+h1 {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.controls {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.howMany {
+  margin-bottom: 10px;
+}
+
+.gameBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gameCard {
+  border: 2px solid rgb(220, 98, 31);
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  border-radius: 8px;
+  text-align: left;
+  height: 400px;
+}
+
+.gameCard a {
+  margin-top: auto;
+  align-self: flex-start;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.gameCard a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+}
+
+.light .gameCard a {
+  color: #000;
+}
+
+.dark .gameCard a {
+  color: #fff;
+}
+
+.gameCard p {
+  margin: 5px 0;
+}
+
+.back-button {
+  background: rgb(220, 98, 31);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.back-button:hover {
+  background: rgb(255, 120, 50);
+}
+
+.game-detail .game-icon {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.gameList {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.learn-more-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.learn-more-link {
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.learn-more-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+}
+
+.light .learn-more-link {
+  color: #000;
+}
+
+.dark .learn-more-link {
+  color: #fff;
+}
+
+.aboutSize {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.aboutSize p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.game-detail-image {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.game-description {
+  margin: 20px 0;
+}
+
+.game-info {
+  margin-top: 20px;
+}
+
+.light input[type="text"], .light select {
+  background-color: #fff;
+  color: #213547;
+  border: 1px solid #ccc;
+}
+
+.dark input[type="text"], .dark select {
+  background-color: #2a2a2a;
+  color: rgba(255, 255, 255, 0.87);
+  border: 1px solid #555;
+}
+
+.homepageContent {
+  margin-left: 40px;
+}
+
+.game-image {
+  width: 200px;
+}
+
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.aboutCard {
+  border: 2px solid rgb(220, 98, 31);
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.aboutDescription {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.aboutDetail {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.game-icon {
+  font-size: 2em;
+}
+
+.gameDetail {
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.light .gameDetail {
+  border: 1px solid #333;
+}
+
+.dark .gameDetail {
+  border: 1px solid #fff;
+}
