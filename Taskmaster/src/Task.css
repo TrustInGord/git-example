@@ -1,0 +1,106 @@
+.taskRow {
+  background: white;
+  border: 3px solid #1976d2;
+  border-radius: 8px;
+  color: black;
+}
+
+.taskRow td {
+  border: none;
+  padding: 0 !important;
+}
+
+.taskContent {
+  padding: 12px;
+}
+
+.taskHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  background: #90caf9;
+  padding: 10px 12px;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+}
+
+.taskHeaderButtons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.taskTitle {
+  font-weight: bold;
+  color: #0d47a1;
+  font-size: 18px;
+  margin: 0;
+}
+
+.deleteBtn {
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.deleteBtn:hover {
+  background: #1565c0;
+}
+
+.taskBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.taskSubtasks {
+  margin: 0;
+  color: #424242;
+  flex: 1;
+}
+
+.taskPerson {
+  color: #1976d2;
+  font-weight: 600;
+  margin-left: 20px;
+  align-self: flex-start;
+}
+
+.taskId {
+  text-align: right;
+  font-size: 10px;
+  color: #666;
+  margin-top: 8px;
+}
+
+.statusCircle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.statusCircle.pending {
+  background: #ffd700;
+  color: black;
+}
+
+.statusCircle.complete {
+  background: #4caf50;
+  color: white;
+}
+
+.statusCircle.failed {
+  background: #f44336;
+  color: white;
+}

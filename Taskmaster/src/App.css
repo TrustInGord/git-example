@@ -1,0 +1,109 @@
+body {
+  background: #e3f2fd;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #1976d2;
+  margin-bottom: 2rem;
+  font-family: 'Special Elite', monospace;
+}
+
+.clearButton {
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.clearButton:hover {
+  background: #1565c0;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  background: transparent;
+}
+
+th {
+  background: hsl(207, 90%, 77%);
+  color: black;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  border: 2px solid #1976d2;
+}
+
+thead tr th:first-child {
+  border-radius: 8px 0 0 0;
+}
+
+thead tr th:last-child {
+  border-radius: 0 8px 0 0;
+}
+
+tbody tr:first-child {
+  background: #bbdefb;
+  border: 2px solid #1976d2;
+}
+
+tbody tr:first-child td {
+  padding: 12px;
+}
+
+tbody tr:first-child td:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+tbody tr:first-child td:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  border: 2px solid #64b5f6;
+  border-radius: 4px;
+  font-size: 14px;
+  background: white;
+  color: black;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1976d2;
+}
+
+button {
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #1565c0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+li {
+  margin: 4px 0;
+}

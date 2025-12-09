@@ -1,0 +1,41 @@
+.taskFormTitleContainer {
+  width: 100%;
+  display: flex;
+}
+
+.taskFormTitleInput {
+  flex: 1;
+}
+
+.taskFormSubtaskContainer {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.taskFormSubtaskInput {
+  flex: 1;
+}
+
+.taskFormPersonInput {
+  flex: 1;
+  margin-left: 5px;
+}
+
+.taskFormRoundedButton {
+  border-radius: 20px 0 0 20px;
+  margin-left: -10px;
+  padding-left: 15px;
+}
+
+.taskFormMainPersonContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.taskFormMainPersonInput {
+  flex: 1;
+}
